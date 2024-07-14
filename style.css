@@ -1,0 +1,51 @@
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    font: bold;
+    display: flex;
+    align-items: center;
+}
+nav ul li a:hover{
+    background-color: orangered;
+
+}
+
+.dropMenu{
+    display: none;
+}
+.mMenu{
+    display: flex;
+}
+.collapseBtn{
+    display: none;
+    border: 1px solid gray;
+    padding: 5px 10px;
+}
+
+
+@media(max-width:768px) {
+    .mMenu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 50px;
+        background-color: bisque;
+        padding:5px 20px;
+    }
+    .collapseBtn{
+        display: block;
+    }
+    nav{
+        position: relative;
+    }
+    .dropMenu{
+      position: unset !important;
+      background-color: bisque !important;
+      /* width:unset !important;
+      padding:0px 20px; */ 
+    }
+
+}
